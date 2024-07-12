@@ -10,10 +10,10 @@ on:
         required: true
         type: string
       min_instances: 
-        required: true
+        required: false
         type: number
       max_instances: 
-        required: true
+        required: false
         type: number
       resource_group:   
         required: true
