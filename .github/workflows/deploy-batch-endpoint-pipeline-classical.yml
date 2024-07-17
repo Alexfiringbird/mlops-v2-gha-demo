@@ -9,7 +9,7 @@ jobs:
         file_name: config-infra-prod.yml
   create-compute:
       needs: get-config
-      uses: Azure/mlops-templates/.github/workflows/create-compute.yml@main
+      uses: ./.github/workflows/create-computebatch.yml
       with:
         cluster_name: batch-cluster
         size: STANDARD_DS3_V2
